@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="AIzaSyC44lylJ0IvfOoTWnqjJnJ_WEQE7l7MX0I",
+    api_key="YOUR_API_KEY",
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
@@ -34,3 +34,4 @@ def generate_summary(
     )
 
     return response.choices[0].message.content.strip()
+
