@@ -1,0 +1,2 @@
+docker build -t book-summarizer . 2>&1 | tail -30
+docker run --platform linux/arm64 -p 8000:8000 -e GEMINI_API_KEY=AIzaSyDP8YduDrTI9Nfiz0-oI_dXBmIEB6495aU -e ELEVEN_LABS_API_KEY=sk_83456c2abd0ea30fa3b1db72f410151cc841e57aaf23a730 nikithm/book-summarizer:latest
